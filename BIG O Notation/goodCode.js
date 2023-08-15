@@ -225,7 +225,7 @@ const animals = [
     "Zebra"
 ];
 const name = ['nemo'];
-const large = new Array(100).fill('Bat')
+const large = new Array(1000).fill('Bat')
 function findNemo(array) {
     let t0 = performance.now();
     for(let i = 0; i < array.length; i++) {
