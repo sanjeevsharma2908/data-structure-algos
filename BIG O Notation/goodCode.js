@@ -225,7 +225,7 @@ const animals = [
     "Zebra"
 ];
 const name = ['nemo'];
-const large = new Array(1000).fill('Bat')
+const large = new Array(100).fill('Bat')
 function findNemo(array) {
     let t0 = performance.now();
     for(let i = 0; i < array.length; i++) {
@@ -237,4 +237,21 @@ function findNemo(array) {
     console.log('Call to Nemo took '+(t1-t0)+'milliseconds');
 }
 
-findNemo(large);
+//findNemo(large);
+
+const findNemo2 = array =>{
+    array.forEach(i =>{
+    if(i==='Bat'){
+        console.log('Found Bat!')
+    }})
+}
+// findNemo2(animals);
+
+const findNemo3 = array =>{
+    for(let fish of array){
+        if(fish ==="Ant"){
+            console.log('Found Ant!');
+        }
+    }
+}
+findNemo3(animals);
