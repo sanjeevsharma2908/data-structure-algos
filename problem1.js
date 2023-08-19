@@ -16,6 +16,7 @@ function containsCommonItems(array1, array2) {
     return false;
 }
 // O(a*b) Time Complexity
+// O(1) Space Complexity
 //console.log(containsCommonItems(arr1, arr2));
 
 
@@ -46,6 +47,7 @@ return false;
 }
 
 // O (a + b) // Time Complexity
+//O(a) // Space Complexity
 //console.log(containsCommonItems1(arr1, arr2));
 
 
